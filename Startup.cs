@@ -42,6 +42,10 @@ namespace AllSpice
             services.AddTransient<RecipesRepository>();
 
             services.AddTransient<RecipesService>();
+
+            services.AddTransient<IngredientsRepository>();
+
+            services.AddTransient<IngredientsService>();
         }
 
         public IDbConnection CreateDbConnection()
